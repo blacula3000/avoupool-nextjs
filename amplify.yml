@@ -3,13 +3,14 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm install -g pnpm
-        - pnpm install
+        - echo "Installing dependencies..."
+        - npm install
     build:
       commands:
-        - pnpm run build
+        - echo "Building the application..."
+        - npm run build
   artifacts:
-    baseDirectory: .next
+    baseDirectory: out
     files:
       - '**/*'
   cache:
