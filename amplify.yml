@@ -3,11 +3,9 @@ frontend:
   phases:
     preBuild:
       commands:
-        - echo "Installing dependencies..."
         - npm install
     build:
       commands:
-        - echo "Building the application..."
         - npm run build
   artifacts:
     baseDirectory: out
