@@ -1,7 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
-import { Toaster } from 'react-hot-toast'
+import { Toaster } from 'sonner'
 import { ReactNode } from 'react'
 import MainNav from '@/components/main-nav'
 
